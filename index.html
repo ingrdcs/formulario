@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Devs</title>
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="parte-principal">
+            <h2 class="titulo"> Formulário para Devs by IngridCS</h2>
+
+            <div class="container">
+                <form action="https://api.sheetmonkey.io/form/3KDGP8B5v7qXwuC3BiY8iD" method="post">
+                    <div class="form-inicial">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required />
+
+                        <label for="email">Email</label>
+                        <input type="email" id="Email" name="Email" placeholder="Digite seu email" required />
+
+                        <label for="idade">Idade(opcional)</label>
+                        <input type="text" id="Idade" name="Idade" placeholder="Digite sua idade" />
+                    </div>
+
+
+
+                    <div class="form-opcoes-select">
+                        <label>Qual das opções descreve você:</label>
+
+                        <select class="input-select" id="Cargo" name="Cargo">
+                     <option>Selecione uma opção:</option>
+                     <option>Estudante</option>
+                     <option>Desenvolvedor jr</option>
+                     <option>Desenvolvedor Pleno</option>
+                     <option>Desenvolvedor Sênior</option>
+                     <option>Outros</option>
+                    </select>
+
+                    </div>
+
+
+
+                    <div class="titulo-radio">
+                        <label>Você recomendaria cursos de Programação?</label>
+                    </div>
+
+                    <div class="opcoes-radio">
+                        <input type="radio" name="Opcao recomendacao" value="Sim" />
+                        <label for="Opcao-recomendacao">Sim</label>
+                        <input type="radio" name="Opcao recomendacao" value="Não" />
+                        <label for="Opcao-recomendacao">Não</label>
+                        <input type="radio" name="Opcao recomendacao" value="Talvez" />
+                        <label for="Opcao recomendacao">Talvez</label>
+                    </div>
+
+
+                    <div class="titulo-select">
+                        <label> Qual sua área de interrese:</label>
+                    </div>
+
+                    <select class="input-select" id="Area-de-interesse" name="Area de interesse">
+                   <option>Selecione uma opção:</option>
+                    <option>Desenvolvimento Web</option>
+                    <option>Desenvolvimento Mobile</option>
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                    <option>Full Stack</option>
+                    <option>Outros</option>
+                   </select>
+
+
+                    <div class="titulo-checkbox">
+                        <label>Marque as opções que mais se identifica com você:</label>
+                    </div>
+                    <div class="opcoes-checkbox">
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Html" name="Html"><label for="Html"> HTML5</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Css" name="Css"><label for="Css"> CSS</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Javascript" name="Javascript"><label for="Javascript"> JavaScript</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Py" name="Py"><label for="Py"> Python</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Php" name="Php"> <label for="Php"> Php</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="C" name="C"><label for="C"> C</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="CSharp" name="CSharp"><label for="CSharp"> C#</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Ruby" name="ruby"><label for="Ruby"> Ruby</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="C++" name="C++"> <label for="C++"> C++</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Swift" name="Swift"> <label for="Swift"> Swift</label>
+                        </div>
+
+                        <div class="separa-checkbox">
+                            <input type="checkbox" id="Kotlin" name="Kotlin"> <label for="Kotlin"> Kotlin</label>
+                        </div>
+
+                        <div class="text-area-box">
+                            <label for="outros">Outros</label>
+                            <textarea rows="10" id="outros" name="Outras tecnologias"></textarea>
+                        </div>
+
+                        <input type="submit" id="enviar-form" onclick="formularioEnviado()" />
+
+
+                </form>
+
+                </div>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
